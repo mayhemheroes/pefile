@@ -1,0 +1,9 @@
+project: pefile
+target: fuzz-exe
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_exe.py
+    libfuzzer: true
+    timeout: 12
